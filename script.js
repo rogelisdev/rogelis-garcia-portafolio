@@ -225,7 +225,10 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
       en: "Better traceability, fewer manual tasks, and more agile processes.",
     },
 
-    "case2.title": { es: "Próximos casos de estudio", en: "Upcoming case studies" },
+    "case3.title": {
+      es: "Próximos casos de estudio",
+      en: "Upcoming case studies",
+    },
     "case2.pendingtext": { es: "En construcción", en: "In progress" },
     "case2.copy": {
       es: "Estoy construyendo y desplegando nuevos proyectos, de prácticas dirigidas a productos completos. Mientras se suman a esta sección, puedes seguir el progreso, los prototipos y el código en curso directamente en mi GitHub.",
@@ -267,6 +270,10 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
     // ===============================
     // CASE 2 - INVENTORY SYSTEM
     // ===============================
+    "case2.title": {
+      es: "Gestor de Inventario",
+      en: "Inventory Manager",
+    },
     "case2.k1": {
       es: "Problema",
       en: "Problem",
