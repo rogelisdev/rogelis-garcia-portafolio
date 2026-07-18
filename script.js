@@ -4,13 +4,14 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
 });
 
-// Mobile menu
 const toggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navActions = document.querySelector('.nav-actions');
 
 toggle.addEventListener('click', () => {
   toggle.classList.toggle('open');
   navLinks.classList.toggle('open');
+  navActions.classList.toggle('open');
   document.body.classList.toggle('nav-open');
 });
 
@@ -18,6 +19,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     toggle.classList.remove('open');
     navLinks.classList.remove('open');
+    navActions.classList.remove('open');
     document.body.classList.remove('nav-open');
   });
 });
@@ -53,12 +55,13 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
 
 /* ===================== */
 /* TRANSLATE — ES / EN toggle */
-/* No depende de script.js — módulo aislado */
 /* ===================== */
 (function () {
   const STORAGE_KEY = "site-lang";
 
   const translations = {
+
+
     // NAVBAR
     "nav.home": { es: "Inicio", en: "Home" },
     "nav.about": { es: "Sobre mí", en: "About" },
@@ -76,6 +79,7 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
       es: 'Construyo soluciones backend <span class="accent">seguras, escalables y preparadas para crecer.</span>',
       en: 'I build backend solutions <span class="accent">that are secure, scalable, and built to grow.</span>',
     },
+
     "hero.lede": {
       es: "Ayudo a transformar ideas y procesos en productos digitales confiables mediante arquitecturas backend sólidas, automatización inteligente e integración de tecnologías modernas.",
       en: "I help turn ideas and processes into reliable digital products through solid backend architecture, smart automation, and integration of modern technologies.",
@@ -260,6 +264,49 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
       en: "Tell me about the problem you want to solve. I'll take care of the architecture, automation, and everything behind it.",
     },
     "contact.cta": { es: "Escríbeme →", en: "Email me →" },
+    // ===============================
+    // CASE 2 - INVENTORY SYSTEM
+    // ===============================
+    "case2.title": {
+      es: "Inventory Manager",
+      en: "Inventory Manager",
+    },
+
+    "case2.k1": {
+      es: "Problema",
+      en: "Problem",
+    },
+    "case2.v1": {
+      es: "La gestión manual de productos y existencias generaba errores, pérdida de control y falta de visibilidad en el inventario.",
+      en: "Manual product and stock management caused errors, lack of control, and limited inventory visibility.",
+    },
+
+    "case2.k2": {
+      es: "Solución",
+      en: "Solution",
+    },
+    "case2.v2": {
+      es: "Aplicación web para registrar productos, controlar stock y gestionar ventas desde una interfaz centralizada.",
+      en: "Web application to register products, manage stock, and handle sales from a centralized interface.",
+    },
+
+    "case2.k3": {
+      es: "Arquitectura",
+      en: "Architecture",
+    },
+    "case2.v3": {
+      es: "Aplicación frontend con almacenamiento local (LocalStorage), diseñada para ser ligera, rápida y adaptable.",
+      en: "Frontend application using LocalStorage, designed to be lightweight, fast, and adaptable.",
+    },
+
+    "case2.k4": {
+      es: "Resultado",
+      en: "Result",
+    },
+    "case2.v4": {
+      es: "Mejor control del inventario, reducción de errores manuales y acceso rápido a la información de productos.",
+      en: "Improved inventory control, reduced manual errors, and faster access to product information.",
+    },
   };
 
   function detectDefaultLang() {

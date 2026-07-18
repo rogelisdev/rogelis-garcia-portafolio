@@ -1,18 +1,3 @@
-/* =========================================================
-   ROGELIS GARCIA — Backend Engineer Portfolio
-   Direction: Cyber-Vintage Blueprint
-   A backend engineer's world is made of systems, nodes and
-   signal paths — not hero photos and icon grids. Every visual
-   device here (the grid, the coordinate labels, the connector
-   lines, the "spec sheet" project cards) comes from that world.
-
-   FONTS
-   Bricolage Grotesque -> display: architectural, slightly odd
-                            grotesque, used big and loud
-   Plus Jakarta Sans    -> body copy, warm and easy at length
-   JetBrains Mono       -> the "system" layer: labels, coords,
-                            status tags, spec-sheet data
-   ========================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -324,6 +309,76 @@ img { display: block; max-width: 100%; }
 }
 .btn-ghost:hover { color: var(--text-primary); border-color: var(--border); }
 
+/* ===================== */
+/* MOBILE NAV            */
+/* ===================== */
+@media (max-width: 860px) {
+  .menu-toggle { display: flex; }
+
+  .navbar { position: relative; }
+
+  .nav-actions .btn-outline { display: none; } /* opcional: oculta el CV en el header móvil */
+
+  .nav-links {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    background: rgba(14, 7, 19, 0.97);
+    backdrop-filter: blur(14px);
+
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.35s ease, opacity 0.3s ease;
+
+    font-size: 16px;
+    z-index: 99;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-actions {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+    gap: 16px;
+
+    background: transparent;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 98;
+  }
+
+  .nav-actions.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  body.nav-open {
+    overflow: hidden;
+  }
+}
 /* ===================== */
 /* HERO                   */
 /* ===================== */
