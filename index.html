@@ -1,32 +1,602 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
-    <title>Rogelis Garcia</title>
+    <title>Rogelis Garcia | Backend Engineer</title>
+    <meta name="description"
+        content="Rogelis Garcia — Backend Engineer especializado en arquitectura de software, APIs, automatización e IA. Full Stack cuando el proyecto lo exige.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <nav>
-        <!--NAVBAR-->
-    </nav>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo"><span class="dot"></span>ROGELIS.GARCIA</a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+                <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+                <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+
+            <a href="assets/docs/CV - ROGELIS GARCIA (2).pdf" download class="btn-outline"
+                data-i18n="common.cv">Descargar
+                CV</a>
+            <li>
+                <button id="lang-toggle" class="lang-btn">
+                    <strong>Español</strong> / English
+                </button>
+            </li>
+
+            <button class="menu-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
 
     <main>
-        <!--MAIN-->
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container">
+
+                <div class="hero-copy fade-in">
+                    <span class="eyebrow">NODE_00 · BACKEND_ENGINEER</span>
+                    <h1 data-i18n="hero.title">Construyo soluciones backend <span class="accent">seguras, escalables y
+                            preparadas para
+                            crecer.</span></h1>
+                    <p class="lede" data-i18n="hero.lede">
+                        Ayudo a transformar ideas y procesos en productos digitales confiables mediante
+                        arquitecturas backend sólidas, automatización inteligente e integración de tecnologías modernas.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn-primary" data-i18n="hero.cta1">Ver casos de estudio →</a>
+                        <a href="assets/docs/CV - ROGELIS GARCIA (2).pdf" download class="btn-outline"
+                            data-i18n="common.cv">Descargar CV</a>
+                    </div>
+
+                    <div class="stat-rail">
+                        <div><strong>3+</strong><span data-i18n="hero.stat1">Sistemas construidos</span></div>
+                        <div><strong>1+</strong><span data-i18n="hero.stat2">Años en producción</span></div>
+                        <div><strong>100%</strong><span data-i18n="hero.stat3">Código propio</span></div>
+                        <div><strong>24/7</strong><span data-i18n="hero.stat4">En aprendizaje activo</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-node fade-in">
+                    <div class="node-frame">
+                        <span class="node-corner tl"></span>
+                        <span class="node-corner br"></span>
+                        <span class="node-tag top">NODE_01 // ROOT</span>
+                        <img src="./assets/img/FOTO-ROGELIS.jpg" alt="Rogelis Garcia, Backend Engineer">
+                        <span class="node-tag bottom">STATUS: ONLINE</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-scroll"><span>SCROLL</span><span class="line"></span></div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="about">
+
+            <!-- BLOQUE SUPERIOR -->
+            <div class="container">
+
+                <div class="about-copy fade-in">
+
+                    <span class="eyebrow" data-i18n="about.eyebrow">NODE_02 · ORIGEN</span>
+
+                    <h2 class="section-title" data-i18n="about.title">
+                        Tecnología pensada para <em>resolver problemas reales.</em>
+                    </h2>
+
+                </div>
+
+                <div class="about-body fade-in">
+
+                    <p data-i18n="about.p1"></p>
+
+                    <p data-i18n="about.p2"></p>
+
+                    <p data-i18n="about.p3"></p>
+
+                    <div class="about-stack">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Node.js</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>Angular</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BLOQUE INFERIOR -->
+            <div class="container">
+
+                <!-- FORMACIÓN -->
+                <div class="formation-log">
+
+                    <div class="formation-header">
+                        <span class="tag">0 / EDU</span>
+                        <h4 data-i18n="formation.title">Formación y credenciales</h4>
+                    </div>
+
+                    <div class="formation-grid">
+
+                        <div class="formation-item">
+
+                            <span class="formation-code">
+                                EDU_01 · 2025 — 2026
+                            </span>
+
+                            <h5>Riwi</h5>
+
+                            <p data-i18n="formation.desc1">
+                                Programa intensivo de formación tecnológica enfocado en desarrollo
+                                backend, bases de datos, arquitectura de software, metodologías
+                                ágiles y construcción de soluciones para entornos empresariales.
+                            </p>
+
+                            <span class="formation-role">
+                                Software Developer
+                            </span>
+
+                        </div>
+
+                        <div class="formation-item">
+
+                            <span class="formation-code">
+                                EDU_02 · 2026
+                            </span>
+
+                            <h5>Generation Colombia</h5>
+
+                            <p data-i18n="formation.desc2">
+                                Bootcamp Full Stack Java enfocado en desarrollo de aplicaciones web,
+                                APIs REST, Spring Boot, bases de datos relacionales, frontend moderno
+                                y buenas prácticas de ingeniería de software.
+                            </p>
+
+                            <span class="formation-role">
+                                Full Stack Java Developer
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- LEDGER -->
+                <div class="ledger">
+
+                    <div class="ledger-row">
+                        <span class="plate-index">02</span>
+                        <span class="tag">01 / ARCH</span>
+                        <h4 data-i18n="ledger.title1">Diseño con visión de largo plazo</h4>
+                        <p data-i18n="ledger.desc1">
+                            Las decisiones técnicas correctas desde el inicio facilitan
+                            el crecimiento y mantenimiento del sistema.
+                        </p>
+                        <div class="dim-line"></div>
+                    </div>
+
+                    <div class="ledger-row">
+                        <span class="plate-index">03</span>
+                        <span class="tag">02 / AUTO</span>
+                        <h4 data-i18n="ledger.title2">Automatización orientada a eficiencia</h4>
+                        <p data-i18n="ledger.desc2">
+                            Busco reducir tareas manuales mediante procesos automatizados
+                            que aporten consistencia y ahorro de tiempo.
+                        </p>
+                        <div class="dim-line"></div>
+                    </div>
+
+                    <div class="ledger-row">
+                        <span class="plate-index">04</span>
+                        <span class="tag">03 / AI</span>
+                        <h4 data-i18n="ledger.title3">IA aplicada a resultados</h4>
+                        <p data-i18n="ledger.desc3">
+                            La inteligencia artificial debe aportar valor tangible,
+                            optimizando procesos y mejorando la toma de decisiones.
+                        </p>
+                        <div class="dim-line"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CORE EXPERTISE -->
+        <section id="habilidades" class="expertise">
+            <div class="container">
+
+                <div class="section-intro fade-in">
+                    <span class="eyebrow" data-i18n="expertise.eyebrow">NODE_03 · ECOSISTEMA</span>
+                    <h2 class="section-title" data-i18n="expertise.title">
+                        Tecnologías que se integran para
+                        <em>crear soluciones completas.</em>
+                    </h2>
+                </div>
+
+                <div class="node-map fade-in">
+
+                    <div class="node-card" data-code="SVC_01">
+                        <div class="node-icon">⚙</div>
+                        <h3>Backend Engineering</h3>
+                        <p data-i18n="expertise.card1.desc">
+                            Arquitectura de servicios limpia, mantenible y pensada para escalar sin reescribirse.
+                        </p>
+                    </div>
+
+                    <div class="node-card" data-code="SVC_02">
+                        <div class="node-icon">⇄</div>
+                        <h3>API Development</h3>
+                        <p data-i18n="expertise.card2.desc">
+                            APIs REST documentadas, seguras y consistentes, listas para integrarse con cualquier
+                            cliente.
+                        </p>
+                    </div>
+
+                    <div class="node-card" data-code="SVC_03">
+                        <div class="node-icon">✦</div>
+                        <h3>AI Automation</h3>
+                        <p data-i18n="expertise.card3.desc">
+                            Modelos y flujos de NLP aplicados a procesos reales:
+                            clasificación, análisis y respuesta automática.
+                        </p>
+                    </div>
+
+                    <div class="node-card" data-code="SVC_04">
+                        <div class="node-icon">☁</div>
+                        <h3>Cloud Solutions</h3>
+                        <p data-i18n="expertise.card4.desc">
+                            Despliegue y contenedores con Docker, pensados para entornos reproducibles y portables.
+                        </p>
+                    </div>
+
+                    <div class="node-card" data-code="SVC_05">
+                        <div class="node-icon">◧</div>
+                        <h3>Full Stack Development</h3>
+                        <p data-i18n="expertise.card5.desc">
+                            Cuando el proyecto lo exige, conecto ese backend con una interfaz igual de sólida.
+                        </p>
+                    </div>
+
+                    <div class="node-card" data-code="SVC_06">
+                        <div class="node-icon">◎</div>
+                        <h3 data-i18n="expertise.card6.title">Sistemas Escalables</h3>
+                        <p data-i18n="expertise.card6.desc">
+                            Bases de datos y consultas optimizadas para crecer sin perder rendimiento.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BLOG -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+
+                <div class="section-intro fade-in">
+                    <span class="eyebrow" data-i18n="blog.eyebrow">NODE_05 · CONOCIMIENTOS</span>
+
+                    <h2 class="section-title" data-i18n="blog.title">
+                        Recursos, aprendizajes y <em>buenas prácticas.</em>
+                    </h2>
+
+                    <p class="section-description" data-i18n="blog.desc">
+                        Explora contenido técnico, conceptos fundamentales y recursos que han
+                        influido en mi crecimiento como desarrollador. Una colección de temas
+                        útiles sobre arquitectura, calidad de código y desarrollo de software
+                        moderno.
+                    </p>
+                </div>
+
+                <div class="blog-grid">
+
+                    <article class="blog-card">
+                        <span class="blog-code">GUIDE_01</span>
+                        <h3 data-i18n="blog.card1.title">Buenas prácticas en desarrollo de software</h3>
+                        <p data-i18n="blog.card1.desc">
+                            Principios y recomendaciones para escribir código más limpio,
+                            mantenible y fácil de escalar en proyectos reales.
+                        </p>
+                        <a href="https://clean-code-developer.com" target="_blank" class="blog-link"
+                            data-i18n="blog.link">
+                            Explorar recurso
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <span class="blog-code">GUIDE_02</span>
+                        <h3 data-i18n="blog.card2.title">Arquitectura y diseño de aplicaciones</h3>
+                        <p data-i18n="blog.card2.desc">
+                            Conceptos esenciales para estructurar sistemas robustos,
+                            separar responsabilidades y facilitar el mantenimiento.
+                        </p>
+                        <a href="https://refactoring.guru/es/design-patterns" target="_blank" class="blog-link"
+                            data-i18n="blog.link">
+                            Explorar recurso
+                        </a>
+                    </article>
+
+                    <article class="blog-card">
+                        <span class="blog-code">GUIDE_03</span>
+                        <h3 data-i18n="blog.card3.title">Java moderno y ecosistema Spring</h3>
+                        <p data-i18n="blog.card3.desc">
+                            Recursos para profundizar en Java, Spring Boot,
+                            APIs REST y herramientas utilizadas en el desarrollo backend.
+                        </p>
+                        <a href="https://spring.io/guides" target="_blank" class="blog-link" data-i18n="blog.link">
+                            Explorar recurso
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+
+                <div class="section-intro fade-in">
+                    <span class="eyebrow" data-i18n="projects.eyebrow">NODE_04 · CASOS DE ESTUDIO</span>
+                    <h2 class="section-title" data-i18n="projects.title">Proyectos desarrollados para <em>resolver
+                            necesidades concretas.</em></h2>
+                </div>
+
+                <!-- CASO 1 -->
+                <article class="case fade-in">
+                    <div class="case-media">
+                        <span class="case-label">SVC_01 // SMART PQRS</span>
+                        <img src="./assets/img/Pqrs.png" alt="Smart PQRS">
+                    </div>
+
+                    <div class="case-body">
+                        <h3>Smart PQRS</h3>
+
+                        <div class="spec-grid">
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case1.k1">Problema</span>
+                                <span class="v" data-i18n="case1.v1">
+                                    La gestión manual de PQRS dificultaba el seguimiento y aumentaba los tiempos de
+                                    respuesta.
+                                </span>
+                            </div>
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case1.k2">Solución</span>
+                                <span class="v" data-i18n="case1.v2">
+                                    Plataforma centralizada para registrar, gestionar y analizar solicitudes de manera
+                                    eficiente.
+                                </span>
+                            </div>
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case1.k3">Arquitectura</span>
+                                <span class="v" data-i18n="case1.v3">
+                                    Aplicación web integrada con APIs y automatizaciones mediante n8n.
+                                </span>
+                            </div>
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case1.k4">Resultado</span>
+                                <span class="v" data-i18n="case1.v4">
+                                    Mayor trazabilidad, menos tareas manuales y procesos más ágiles.
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="case-tags">
+                            <span>JavaScript</span>
+                            <span>n8n</span>
+                            <span>HTML&CSS</span>
+                        </div>
+
+                        <div class="case-actions">
+                            <a href="https://rogelisdev.github.io/pqrs-n8n/" class="btn-outline" data-i18n="common.demo">Ver demo</a>
+                            <a href="https://github.com/rogelisdev/pqrs-n8n/tree/main" class="btn-ghost"
+                                data-i18n="common.code">Código →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CASO 2 -->
+                <article class="case fade-in">
+                    <div class="case-media">
+                        <span class="case-label">SVC_02 // INVENTORY SYSTEM</span>
+                        <img src="./assets/img/Inventario.png" alt="Sistema de Inventario">
+                    </div>
+
+                    <div class="case-body">
+                        <h3 data-i18n="case2.title">Inventory Manager</h3>
+
+                        <div class="spec-grid">
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case2.k1">Problema</span>
+                                <span class="v" data-i18n="case2.v1">
+                                    La gestión manual de productos y existencias generaba errores, pérdida de control y
+                                    falta de visibilidad en el inventario.
+                                </span>
+                            </div>
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case2.k2">Solución</span>
+                                <span class="v" data-i18n="case2.v2">
+                                    Aplicación web para registrar productos, controlar stock y gestionar ventas desde
+                                    una interfaz centralizada.
+                                </span>
+                            </div>
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case2.k3">Arquitectura</span>
+                                <span class="v" data-i18n="case2.v3">
+                                    Aplicación frontend con almacenamiento local (LocalStorage), diseñada para ser
+                                    ligera, rápida y adaptable.
+                                </span>
+                            </div>
+
+                            <div class="spec">
+                                <span class="k" data-i18n="case2.k4">Resultado</span>
+                                <span class="v" data-i18n="case2.v4">
+                                    Mejor control del inventario, reducción de errores manuales y acceso rápido a la
+                                    información de productos.
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <div class="case-tags">
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                            <span>HTML&CSS</span>
+                        </div>
+
+                        <div class="case-actions">
+                            <a href="https://rogelisdev.github.io/demo-inventario/" class="btn-outline" data-i18n="common.demo">Ver demo</a>
+                            <a href="https://github.com/rogelisdev/demo-inventario/tree/main" class="btn-ghost"
+                                data-i18n="common.code">Código →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CASO 3 — ROADMAP / EN CONSTRUCCIÓN -->
+                <article class="case case-pending fade-in">
+                    <div class="case-media case-media--pending">
+                        <span class="case-label">SVC_02 // ROADMAP</span>
+                        <div class="pending-mark">
+                            <span class="pending-icon">◐</span>
+                            <span class="pending-text" data-i18n="case2.pendingtext">En construcción</span>
+                        </div>
+                    </div>
+
+                    <div class="case-body">
+                        <h3 data-i18n="case2.title">Próximos casos de estudio</h3>
+
+                        <p class="pending-copy" data-i18n="case2.copy">
+                            Estoy construyendo y desplegando nuevos proyectos, de prácticas dirigidas
+                            a productos completos. Mientras se suman a esta sección, puedes seguir
+                            el progreso, los prototipos y el código en curso directamente en mi GitHub.
+                        </p>
+
+                        <div class="case-tags">
+                            <span data-i18n="case2.tag1">En desarrollo</span>
+                            <span data-i18n="case2.tag2">Prototipos</span>
+                            <span data-i18n="case2.tag3">Prácticas</span>
+                        </div>
+
+                        <div class="case-actions">
+                            <a href="https://github.com/rogelisdev" target="_blank" rel="noopener" class="btn-outline"
+                                data-i18n="case2.github">Ver GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- METODOLOGIA -->
+                <div class="method fade-in">
+                    <div class="method-head">
+                        <span class="eyebrow" data-i18n="method.eyebrow">NODE_05 · FLUJO</span>
+                        <h3 data-i18n="method.title">Proceso de desarrollo y entrega</h3>
+                        <p data-i18n="method.desc">El único lugar del sitio donde el orden importa: cada proyecto pasa
+                            por estas seis etapas, en
+                            este orden.</p>
+                    </div>
+
+                    <div class="pipeline">
+                        <div class="pipe-step">
+                            <span class="num">01</span>
+                            <h5 data-i18n="pipe1.title">Descubrir</h5>
+                            <span data-i18n="pipe1.desc">Entender el problema real</span>
+                        </div>
+
+                        <div class="pipe-step">
+                            <span class="num">02</span>
+                            <h5 data-i18n="pipe2.title">Diseñar</h5>
+                            <span data-i18n="pipe2.desc">Definir el flujo de datos</span>
+                        </div>
+
+                        <div class="pipe-step">
+                            <span class="num">03</span>
+                            <h5 data-i18n="pipe3.title">Arquitectar</h5>
+                            <span data-i18n="pipe3.desc">Modelar el sistema</span>
+                        </div>
+
+                        <div class="pipe-step">
+                            <span class="num">04</span>
+                            <h5 data-i18n="pipe4.title">Construir</h5>
+                            <span data-i18n="pipe4.desc">Construir e integrar</span>
+                        </div>
+
+                        <div class="pipe-step">
+                            <span class="num">05</span>
+                            <h5 data-i18n="pipe5.title">Desplegar</h5>
+                            <span data-i18n="pipe5.desc">Contenerizar y publicar</span>
+                        </div>
+
+                        <div class="pipe-step">
+                            <span class="num">06</span>
+                            <h5 data-i18n="pipe6.title">Escalar</h5>
+                            <span data-i18n="pipe6.desc">Optimizar bajo carga</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="contact-panel fade-in">
+                    <span class="eyebrow" data-i18n="contact.eyebrow">NODE_07 · CONTACTO</span>
+                    <h2 data-i18n="contact.title">¿Tienes un sistema que construir? Hablemos.</h2>
+                    <p data-i18n="contact.desc">Cuéntame el problema que quieres resolver. Yo me encargo de la
+                        arquitectura, la automatización y
+                        todo lo que hay detrás.</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rogelisdev@gmail.com" class="btn-primary"
+                        data-i18n="contact.cta">Escríbeme →</a>
+
+                    <div class="contact-links">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rogelisdev@gmail.com">✉
+                            rogelisdev@gmail.com</a>
+                        <a href="https://github.com/rogelisdev">↗ github.com/rogelisdev</a>
+                        <a href="https://www.linkedin.com/in/rogelisgarcia/">↗ linkedin.com/in/rogelisgarcia</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <!--FOOTER-->
+    <footer class="footer">
+        <p>© 2026 Rogelis Garcia — Backend Engineer</p>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="translate.js"></script>
 </body>
 
 </html>
