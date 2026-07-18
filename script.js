@@ -267,11 +267,6 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
     // ===============================
     // CASE 2 - INVENTORY SYSTEM
     // ===============================
-    "case2.title": {
-      es: "Inventory Manager",
-      en: "Inventory Manager",
-    },
-
     "case2.k1": {
       es: "Problema",
       en: "Problem",
