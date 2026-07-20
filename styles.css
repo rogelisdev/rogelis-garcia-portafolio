@@ -450,10 +450,28 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.6px;
 }
 
-/* portrait node — the photo lives inside a blueprint frame,
-   annotated like a scanned system component, not a headshot card */
+
 .hero-node { position: relative; justify-self: center; }
 
+.node-intro {
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: var(--mono);
+  font-size: 21px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: var(--text-secondary);
+
+  padding-top: 8px;
+
+  border-top: 1px solid rgba(var(--violet-rgb), 0.4);
+
+  white-space: nowrap;
+}
 .node-frame {
   position: relative;
   width: min(360px, 80vw);

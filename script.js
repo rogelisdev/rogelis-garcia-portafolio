@@ -84,6 +84,11 @@ document.querySelectorAll('.fade-in').forEach(el => revealObserver.observe(el));
       es: "Ayudo a transformar ideas y procesos en productos digitales confiables mediante arquitecturas backend sólidas, automatización inteligente e integración de tecnologías modernas.",
       en: "I help turn ideas and processes into reliable digital products through solid backend architecture, smart automation, and integration of modern technologies.",
     },
+    "hero.intro": {
+      es: "Hola, soy Rogelis García.",
+      en: "Hi, I'm Rogelis Garcia.",
+    },
+    
     "hero.cta1": { es: "Ver casos de estudio →", en: "View case studies →" },
     "hero.stat1": { es: "Sistemas construidos", en: "Systems built" },
     "hero.stat2": { es: "Años en producción", en: "Years in production" },
